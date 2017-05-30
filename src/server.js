@@ -1,5 +1,14 @@
 import express from 'express';
-const app = express()
+import bodyParser from 'body-parser';
+
+import { task } from './api/routes';
+
+const app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.use('/task', task);
 
 app.get('/', function (req, res) {
   res.send('Hello World!')
