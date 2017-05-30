@@ -2,7 +2,7 @@
   "name": "express-swagger-todo",
   "version": "0.0.1",
   "description": "Learning how to create an express api with swagger integration",
-  "main": "server.js",
+  "main": "src/server.js",
   "repository": "https://github.com/the-forgers/express-swagger-todo",
   "author": "The Forgers <https://github.com/the-forgers>",
   "contributors": [
@@ -16,13 +16,16 @@
     "express": "^4.15.3"
   },
   "scripts": {
-    "start": "babel-node server.js --presets es2015,stage-2",
-    "start": "nodemon server.js --legacy-watch --exec babel-node --presets es2015,stage-2"
+    "start": "nodemon src/server.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/server.js"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
+    "flow-bin": "^0.47.0",
     "nodemon": "^1.11.0"
   }
 }
