@@ -5,9 +5,14 @@
   "main": "index.js",
   "repository": "https://github.com/the-forgers/express-swagger-todo",
   "author": "The Forgers <https://github.com/the-forgers>",
-   "contributors": [{
-    "name": "Salomao Rodrigues",
-    "email": "salomao88@gmail.com"
-  }],
-  "license": "MIT"
+  "contributors": [
+    {
+      "name": "Salomao Rodrigues",
+      "email": "salomao88@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
