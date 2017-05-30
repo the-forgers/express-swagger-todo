@@ -1,0 +1,13 @@
+{
+  "name": "express-swagger-todo",
+  "version": "0.0.1",
+  "description": "Learning how to create an express api with swagger integration",
+  "main": "index.js",
+  "repository": "https://github.com/the-forgers/express-swagger-todo",
+  "author": "The Forgers <https://github.com/the-forgers>",
+   "contributors": [{
+    "name": "Salomao Rodrigues",
+    "email": "salomao88@gmail.com"
+  }],
+  "license": "MIT"
+}
